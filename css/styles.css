@@ -1,14 +1,6 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(-45deg, #1f1c2c, #928dab, #2c3e50, #4ca1af);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    color: #fff;
-    line-height: 1.6;
-  }
-  
-
-/* === Reset & Global Styles === */
+/* =======================
+   RESET & BASE STYLES
+======================= */
 * {
   margin: 0;
   padding: 0;
@@ -17,13 +9,17 @@ body {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #fefefe;
+  background: linear-gradient(-45deg, #1f1c2c, #928dab, #2c3e50, #4ca1af);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   color: #333;
+  line-height: 1.6;
   scroll-behavior: smooth;
 }
 
-/* === Links & Buttons === */
+/* =======================
+   TYPOGRAPHY & BUTTONS
+======================= */
 a {
   color: inherit;
   text-decoration: none;
@@ -37,216 +33,87 @@ a:hover {
 .btn {
   background: linear-gradient(135deg, #0077cc, #005fa3);
   color: #fff;
+  padding: 0.75rem 1.5rem;
   border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
   font-size: 1rem;
+  border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
-
-/* === Section Headings === */
-section h2 {
-  font-size: 2.2rem;
-  color: #222;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-/* === Utility Spacing === */
-section {
-  padding: 4rem 2rem;
-}
-
-input,
-textarea {
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 
-input:focus,
-textarea:focus {
-  border-color: #0077cc;
-  outline: none;
-  box-shadow: 0 0 8px rgba(0,119,204,0.2);
+.btn:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0077cc;
 }
 
+.btn-outline {
+  background: transparent;
+  color: #0077cc;
+  border: 2px solid #0077cc;
+}
 
-  @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  .hero, .highlight-box {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1.2s ease-out forwards;
-  }
-  
-  .hero {
-    animation-delay: 0.3s;
-  }
-  
-  .highlight-box {
-    animation-delay: 0.8s;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .btn {
-    background-color: #ff4d00;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: all 0.4s ease;
-    box-shadow: 0 0 0 transparent;
-  }
-  
-  .btn:hover {
-    background-color: #ff4d00;
-    box-shadow: 0 0 15px #ff4d00;
-    transform: scale(1.05);
-  }
-  
+.btn-outline:hover {
+  background: #0077cc;
+  color: #fff;
+}
 
-  .filters {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .filters input {
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: none;
-    font-size: 1rem;
-    min-width: 180px;
-  }  
+section h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
 
-  .car-specs {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1rem 0;
-    text-align: left;
-    font-size: 0.95rem;
-    color: #666;
-  }
-  
-  .car-specs li {
-    margin: 0.3rem 0;
-  }  
+/* =======================
+   NAVBAR
+======================= */
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .car-card {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeSlideIn 0.8s ease-out forwards;
-  }
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-  .car-card:hover {
-    transform: scale(1.03) translateY(-5px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-  }
-  
-  
-  @keyframes fadeSlideIn {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
 
-/* Reset some basic stuff */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Header */
-  header {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #ff4d00;
-  }
-  
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
 
-/* === Home Hero Section === */
+nav a:hover {
+  color: #ff4d00;
+}
+
+/* =======================
+   HOME PAGE STYLES
+======================= */
 .home-hero {
   background: linear-gradient(135deg, #1a1a1a, #343434);
   color: #fff;
-  height: 100vh;
+  min-height: 90vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
+  padding: 2rem;
   position: relative;
-  padding: 0 1rem;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Scroll Down Arrow */
 .scroll-down {
   position: absolute;
   bottom: 20px;
@@ -256,571 +123,223 @@ textarea:focus {
 }
 
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+.featured-preview {
+  background: #f5f5f5;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.featured-cars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.car-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  width: 300px;
+}
+
+.car-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =======================
+   INVENTORY STYLES
+======================= */
+.inventory {
+  padding: 4rem 2rem;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.inventory-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inventory-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.inventory-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+/* =======================
+   ABOUT & TEAM STYLES
+======================= */
+.about-hero,
+.contact-hero {
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #222, #444);
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.team-card {
+  background: #f1f1f1;
+  border-radius: 16px;
+  padding: 1rem;
+  max-width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+.team-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* =======================
+   CONTACT PAGE
+======================= */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  background: #f7f7f7;
+}
+
+.contact-form,
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form button {
+  background: #0077cc;
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+/* =======================
+   ANIMATIONS
+======================= */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+/* =======================
+   MEDIA QUERIES
+======================= */
+@media (max-width: 768px) {
+  .home-hero h1 {
+    font-size: 2rem;
   }
-  50% {
-    transform: translateY(10px);
+
+  .home-hero p {
+    font-size: 1rem;
+  }
+
+  .featured-cars,
+  .inventory-grid,
+  .team-grid,
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .car-card {
+    width: 90%;
   }
 }
 
-  /* Hero Section */
-  .hero {
-    background: url('../images/car-hero.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 5rem 2rem;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .btn {
-    background-color: #ff4d00;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #e04300;
-  }
-  
-
-  .featured-preview {
-    background: #f5f5f5;
-    text-align: center;
-    padding: 4rem 2rem;
-  }
-  
-  .featured-preview h2 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-  
-  .featured-cars {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .car-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 1rem;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    max-width: 220px;
-    transition: transform 0.3s ease;
-  }
-  
-  .car-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .car-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 0.8rem;
-  }
-  
-  .btn-outline {
-    background: transparent;
-    color: #0077cc;
-    border: 2px solid #0077cc;
-  }
-  
-  .btn-outline:hover {
-    background: #0077cc;
-    color: #fff;
+@media (max-width: 480px) {
+  .home-hero h1 {
+    font-size: 1.5rem;
   }
 
-  .inventory-controls {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-  }
-  
-  #searchInput {
-    padding: 0.75rem 1rem;
-    width: 300px;
-    max-width: 90%;
-    font-size: 1rem;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-  }
-  
-  #searchInput:focus {
-    border-color: #0077cc;
-    box-shadow: 0 0 8px rgba(0,119,204,0.2);
-  }  
-  
-  /* Featured Cars */
-  .featured {
-    padding: 4rem 2rem;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  .featured h2 {
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-  
-  .car-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .car-card {
-    background-color: #fafafa;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .car-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .car-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-  
-  .car-card h3 {
-    margin: 1rem 0 0.5rem;
-  }
-  
-  .car-card p {
-    margin-bottom: 1rem;
-    color: #555;
-  }
-  
-  .featured-cars {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .car-card {
-    background: #fff;
-    border-radius: 16px;
-    padding: 1rem;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    max-width: 300px; /* Increased from 220px */
-    transition: transform 0.3s ease;
-  }
-  
-  .car-card img {
-    width: 100%;
-    height: 200px; /* Set a taller height */
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #1a1a1a;
-    color: #ccc;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+  .home-hero p {
+    font-size: 0.9rem;
   }
 
-  .highlights {
-    background-color: #fff;
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  
-  .highlight-box {
-    max-width: 700px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  .highlight-box h2 {
-    margin-bottom: 1rem;
-  }
-  
-  .highlight-box ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: left;
-  }
-  
-  .highlight-box li {
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-  }
-  
-
-  .inventory {
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  
-  .inventory h1 {
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    color: #fff;
-  }
-  
-  .car-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .car-card {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    padding: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .car-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  }
-  
-  .car-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 6px;
-  }
-  
-  .car-card h3 {
-    margin: 1rem 0 0.5rem;
-    color: #333;
-  }
-  
-  .car-card p {
-    color: #555;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-  
-
-  .about-hero {
-    padding: 5rem 2rem;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    animation: fadeInUp 1s ease forwards;
-  }
-  
-  .about-hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .about-hero p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
-  .why-choose-us {
-    padding: 4rem 2rem;
-    background-color: #fff;
-    color: #333;
-    text-align: center;
-  }
-  
-  .why-choose-us h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .feature {
-    max-width: 300px;
-    padding: 1rem;
-    background: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .feature:hover {
-    transform: translateY(-8px);
-  }
-  
-  .team-member {
-    opacity: 0;
-    transform: scale(0.9);
-    animation: teamFadeIn 0.8s ease forwards;
-  }
-  
-  @keyframes teamFadeIn {
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  .about-hero {
-    background: linear-gradient(135deg, #222, #444);
-    color: #fff;
-    padding: 5rem 2rem;
-    text-align: center;
-  }
-  
-  .about-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .about-text p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
-  .our-story {
-    padding: 4rem 2rem;
-    text-align: center;
-    background: #f9f9f9;
-  }
-  
-  .our-story h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .our-story p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    color: #444;
-  }
-  
-  .team {
-    padding: 4rem 2rem;
-    background: #fff;
-    text-align: center;
-  }
-  
-  .team-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .team-card {
-    background: #f1f1f1;
-    border-radius: 16px;
-    padding: 1rem;
-    max-width: 220px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  }
-  
-  .team-card:hover {
-    transform: translateY(-6px);
-  }
-  
-  .team-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-  }
-  
-  .team-card h3 {
-    margin: 0.5rem 0 0.2rem;
-  }
-  
-  .team-card p {
-    font-size: 0.95rem;
-    color: #555;
-  }
-  
-
-
-  .contact-hero {
-    padding: 4rem 2rem;
-    text-align: center;
-    background: linear-gradient(135deg, #1a1a1a, #3e3e3e);
-    color: #fff;
-  }
-  
-  .contact-form-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-    padding: 4rem 2rem;
-    background: #f9f9f9;
-  }
-  
-  form {
-    display: flex;
+  header {
     flex-direction: column;
-    width: 300px;
-    gap: 1rem;
-  }
-  
-  form input,
-  form textarea {
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-  }
-  
-  form textarea {
-    height: 150px;
-    resize: vertical;
-  }
-  
-  .contact-info {
-    max-width: 300px;
-    font-size: 1rem;
-    color: #444;
-  }
-  
-  .contact-info p {
-    margin-bottom: 1rem;
-  }
-
-  .contact-hero {
-    background: linear-gradient(to right, #111, #333);
-    color: white;
-    padding: 4rem 2rem;
     text-align: center;
   }
-  
-  .contact-hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .contact-hero p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .contact-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 3rem;
-    padding: 4rem 2rem;
-    background: #f7f7f7;
-  }
-  
-  .contact-form {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    display: flex;
+
+  nav ul {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
   }
-  
-  .contact-form input,
-  .contact-form textarea {
-    padding: 0.75rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-  }
-  
-  .contact-form button {
-    background: #0077cc;
-    color: white;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .contact-form button:hover {
-    background: #005fa3;
-  }
-  
-  .contact-info {
-    flex: 1;
-    min-width: 250px;
-    max-width: 400px;
-    color: #333;
-  }
-
-  
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .fade-in-up {
-    animation: fadeInUp 0.8s ease forwards;
-    opacity: 0; /* default state */
-  }
-
-  .contact-form button {
-    background: #0077cc;
-    color: white;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-  }
-  
-  .contact-form button:hover {
-    background: #005fa3;
-    transform: scale(1.05);
-  }
-  
-  
+}
