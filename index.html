@@ -6,10 +6,10 @@
   <title>Barrett's AutoHub</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+<div id="loader-wrapper">
+  <div class="spinner"></div>
+</div>
 <body>
-  <div id="loader-wrapper">
-    <div class="spinner"></div>
-  </div>  
   <header>
     <div class="logo">🚗 Barrett's AutoHub</div>
     <nav>
@@ -67,7 +67,7 @@
     </div>
   </footer>
 
-  <script src="js/script.js">
+  <script>
   window.addEventListener("load", function () {
     const loader = document.getElementById("loader-wrapper");
     loader.style.opacity = "0";
