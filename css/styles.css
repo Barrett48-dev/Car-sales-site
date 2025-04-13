@@ -250,6 +250,26 @@ nav a:hover {
 }
 
 /*================
+Buy Button
+==================*/
+.buy-button {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/*================
 highlights section
 ==================*/
 .highlights {
