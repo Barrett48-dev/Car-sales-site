@@ -31,7 +31,8 @@ a:hover {
 }
 
 .btn {
-  margin-top: 1.5rem;
+  margin-top: auto;
+  align-self: center;
   background: linear-gradient(135deg, #0077cc, #005fa3);
   color: #fff;
   padding: 0.75rem 1.5rem;
@@ -143,12 +144,15 @@ nav a:hover {
 }
 
 .car-card {
-  background: #fff;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  width: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: 100%;
+  margin-bottom: 20px;
 }
 
 .car-card img {
@@ -161,6 +165,11 @@ nav a:hover {
 
 .car-card:hover {
   transform: translateY(-5px);
+}
+
+.car-specs {
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
 }
 
 /* =======================
