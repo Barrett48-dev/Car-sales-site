@@ -171,16 +171,30 @@ nav a:hover {
   gap: 2rem;
 }
 
+@media (max-width: 768px) {
+  .inventory-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .car-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
 .car-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
-  border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  height: 100%;
   margin-bottom: 20px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .car-card img {
@@ -193,6 +207,7 @@ nav a:hover {
 
 .car-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .car-specs {
