@@ -172,6 +172,36 @@ nav a:hover {
   text-align: center;
 }
 
+.inventory-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.inventory-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.inventory-filters input,
+.inventory-filters select,
+.inventory-filters button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+
 .inventory-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -196,6 +226,19 @@ nav a:hover {
 .inventory-card:hover {
   transform: scale(1.03);
   box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+  .inventory-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inventory-filters input,
+  .inventory-filters select,
+  .inventory-filters button {
+    width: 100%;
+  }
 }
 
 /* =======================
