@@ -122,17 +122,27 @@ nav a:hover {
    HOME PAGE STYLES
 ======================= */
 .home-hero {
-  background: linear-gradient(135deg, #1a1a1a, #343434);
-  color: #fff;
-  min-height: 90vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: linear-gradient(135deg, #111, #222);
+  color: white;
   text-align: center;
   padding: 2rem;
-  position: relative;
-  gap: 2rem; /*Add space between button and text*/
+}
+
+.hero-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
 }
 
 .scroll-down {
