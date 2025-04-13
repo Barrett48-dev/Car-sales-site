@@ -238,6 +238,24 @@ highlights section
   font-size: 1.4rem;
 }
 
+/*========================
+  footer styles
+==========================*/
+.site-footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 /* =======================
    INVENTORY STYLES
 ======================= */
