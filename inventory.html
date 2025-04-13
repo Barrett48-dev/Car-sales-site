@@ -7,162 +7,163 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">🚗 Barrett's AutoHub</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="inventory.html" class="active">Inventory</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page-wrapper">
+    <header>
+      <div class="logo">🚗 Barrett's AutoHub</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html" class="active">Inventory</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section class="inventory-section">
-    <h1 class="inventory-heading">Available Cars</h1>
-    <div class="inventory-filters">
-        <input type="text" id="searchInput" placeholder="Search by model..." />
-        <input type="number" id="minPrice" placeholder="Min Price" />
-        <input type="number" id="maxPrice" placeholder="Max Price" />
-        <button id="filterBtn" class="btn">Filter</button>
-        <button id="resetBtn" class="btn" style="background-color:#555;">Reset</button>
-            <p id="noResults" style="display:none; color:#f88; font-size:1.1rem; margin-top:1rem;">
-                No cars found.
-            </p>
-
-      </div>
+    <section class="inventory-section">
+      <h1 class="inventory-heading">Available Cars</h1>
       <div class="inventory-filters">
-        <input type="text" id="searchInput" placeholder="Search cars..." />
-      </div>      
-    <div class="inventory-grid">
-      <div class="car-card">
-        <img src="images/car1.jpg" alt="Mustang GT" loading="lazy" />
-        <h3>2024 Mustang GT</h3>
-        <p>$45,000</p>
-        <ul class="car-specs">
-            <li><strong>Year:</strong> 2024</li>
-            <li><strong>Fuel:</strong> Gasoline</li>
-            <li><strong>Mileage:</strong> 12,000 km</li>
-            <li><strong>Transmission:</strong> Automatic</li>
-          </ul>
-        <a href="#" class="btn">View Details</a>
+          <input type="text" id="searchInput" placeholder="Search by model..." />
+          <input type="number" id="minPrice" placeholder="Min Price" />
+          <input type="number" id="maxPrice" placeholder="Max Price" />
+          <button id="filterBtn" class="btn">Filter</button>
+          <button id="resetBtn" class="btn" style="background-color:#555;">Reset</button>
+              <p id="noResults" style="display:none; color:#f88; font-size:1.1rem; margin-top:1rem;">
+                  No cars found.
+              </p>
+
+        </div>
+        <div class="inventory-filters">
+          <input type="text" id="searchInput" placeholder="Search cars..." />
+        </div>      
+      <div class="inventory-grid">
+        <div class="car-card">
+          <img src="images/car1.jpg" alt="Mustang GT" loading="lazy" />
+          <h3>2024 Mustang GT</h3>
+          <p>$45,000</p>
+          <ul class="car-specs">
+              <li><strong>Year:</strong> 2024</li>
+              <li><strong>Fuel:</strong> Gasoline</li>
+              <li><strong>Mileage:</strong> 12,000 km</li>
+              <li><strong>Transmission:</strong> Automatic</li>
+            </ul>
+          <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="car-card">
+          <img src="images/car2.jpg" alt="Tesla Model 3" loading="lazy" />
+          <h3>2023 Tesla Model 3</h3>
+          <p>$38,500</p>
+          <ul class="car-specs">
+              <li><strong>Year:</strong> 2024</li>
+              <li><strong>Fuel:</strong> Gasoline</li>
+              <li><strong>Mileage:</strong> 12,000 km</li>
+              <li><strong>Transmission:</strong> Automatic</li>
+            </ul>
+          <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="car-card">
+          <img src="images/car3.jpg" alt="BMW X5" loading="lazy" />
+          <h3>2023 BMW X5</h3>
+          <p>$60,000</p>
+          <ul class="car-specs">
+              <li><strong>Year:</strong> 2024</li>
+              <li><strong>Fuel:</strong> Gasoline</li>
+              <li><strong>Mileage:</strong> 12,000 km</li>
+              <li><strong>Transmission:</strong> Automatic</li>
+            </ul>
+          <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="car-card">
+          <img src="images/car4.jpg" alt="Ferrari Italia" loading="lazy" />
+          <h3>Ferrari Italia</h3>
+          <p>$45,000</p>
+          <ul class="car-specs">
+              <li><strong>Year:</strong> 2024</li>
+              <li><strong>Fuel:</strong> Gasoline</li>
+              <li><strong>Mileage:</strong> 12,000 km</li>
+              <li><strong>Transmission:</strong> Automatic</li>
+            </ul>
+          <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="car-card">
+          <img src="images/car5.jpg" alt="Porche 911 Turbo" loading="lazy" />
+          <h3>Porche 911 Turbo</h3>
+          <p>$38,500</p>
+          <ul class="car-specs">
+              <li><strong>Year:</strong> 2024</li>
+              <li><strong>Fuel:</strong> Gasoline</li>
+              <li><strong>Mileage:</strong> 12,000 km</li>
+              <li><strong>Transmission:</strong> Automatic</li>
+            </ul>
+          <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="car-card">
+          <img src="images/car6.jpg" alt="Chevolet Corvette" loading="lazy" />
+          <h3>Chevolet Corvette</h3>
+          <p>$60,000</p>
+          <ul class="car-specs">
+              <li><strong>Year:</strong> 2024</li>
+              <li><strong>Fuel:</strong> Gasoline</li>
+              <li><strong>Mileage:</strong> 12,000 km</li>
+              <li><strong>Transmission:</strong> Automatic</li>
+            </ul>
+          <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="car-card">
+          <img src="images/car7.jpg" alt="Mazda RX7" loading="lazy" />
+          <h3>Mazda RX7</h3>
+          <p>$45,000</p>
+          <ul class="car-specs">
+              <li><strong>Year:</strong> 2024</li>
+              <li><strong>Fuel:</strong> Gasoline</li>
+              <li><strong>Mileage:</strong> 12,000 km</li>
+              <li><strong>Transmission:</strong> Automatic</li>
+            </ul>
+          <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="car-card">
+          <img src="images/car8.jpg" alt="Range Rover" loading="lazy" />
+          <h3>Range Rover</h3>
+          <p>$38,500</p>
+          <ul class="car-specs">
+              <li><strong>Year:</strong> 2024</li>
+              <li><strong>Fuel:</strong> Gasoline</li>
+              <li><strong>Mileage:</strong> 12,000 km</li>
+              <li><strong>Transmission:</strong> Automatic</li>
+            </ul>
+          <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="car-card">
+          <img src="images/car9.jpg" alt="Dodge Challenger" loading="lazy" />
+          <h3>Dodge Challenger</h3>
+          <p>$60,000</p>
+          <ul class="car-specs">
+              <li><strong>Year:</strong> 2024</li>
+              <li><strong>Fuel:</strong> Gasoline</li>
+              <li><strong>Mileage:</strong> 12,000 km</li>
+              <li><strong>Transmission:</strong> Automatic</li>
+            </ul>
+          <a href="#" class="btn">View Details</a>
+        </div>
+        <!-- Add more cars as needed -->
       </div>
+    </section>
 
-      <div class="car-card">
-        <img src="images/car2.jpg" alt="Tesla Model 3" loading="lazy" />
-        <h3>2023 Tesla Model 3</h3>
-        <p>$38,500</p>
-        <ul class="car-specs">
-            <li><strong>Year:</strong> 2024</li>
-            <li><strong>Fuel:</strong> Gasoline</li>
-            <li><strong>Mileage:</strong> 12,000 km</li>
-            <li><strong>Transmission:</strong> Automatic</li>
-          </ul>
-        <a href="#" class="btn">View Details</a>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Barrett's AutoHub. All rights reserved.</p>
       </div>
-
-      <div class="car-card">
-        <img src="images/car3.jpg" alt="BMW X5" loading="lazy" />
-        <h3>2023 BMW X5</h3>
-        <p>$60,000</p>
-        <ul class="car-specs">
-            <li><strong>Year:</strong> 2024</li>
-            <li><strong>Fuel:</strong> Gasoline</li>
-            <li><strong>Mileage:</strong> 12,000 km</li>
-            <li><strong>Transmission:</strong> Automatic</li>
-          </ul>
-        <a href="#" class="btn">View Details</a>
-      </div>
-
-      <div class="car-card">
-        <img src="images/car4.jpg" alt="Ferrari Italia" loading="lazy" />
-        <h3>Ferrari Italia</h3>
-        <p>$45,000</p>
-        <ul class="car-specs">
-            <li><strong>Year:</strong> 2024</li>
-            <li><strong>Fuel:</strong> Gasoline</li>
-            <li><strong>Mileage:</strong> 12,000 km</li>
-            <li><strong>Transmission:</strong> Automatic</li>
-          </ul>
-        <a href="#" class="btn">View Details</a>
-      </div>
-
-      <div class="car-card">
-        <img src="images/car5.jpg" alt="Porche 911 Turbo" loading="lazy" />
-        <h3>Porche 911 Turbo</h3>
-        <p>$38,500</p>
-        <ul class="car-specs">
-            <li><strong>Year:</strong> 2024</li>
-            <li><strong>Fuel:</strong> Gasoline</li>
-            <li><strong>Mileage:</strong> 12,000 km</li>
-            <li><strong>Transmission:</strong> Automatic</li>
-          </ul>
-        <a href="#" class="btn">View Details</a>
-      </div>
-
-      <div class="car-card">
-        <img src="images/car6.jpg" alt="Chevolet Corvette" loading="lazy" />
-        <h3>Chevolet Corvette</h3>
-        <p>$60,000</p>
-        <ul class="car-specs">
-            <li><strong>Year:</strong> 2024</li>
-            <li><strong>Fuel:</strong> Gasoline</li>
-            <li><strong>Mileage:</strong> 12,000 km</li>
-            <li><strong>Transmission:</strong> Automatic</li>
-          </ul>
-        <a href="#" class="btn">View Details</a>
-      </div>
-
-      <div class="car-card">
-        <img src="images/car7.jpg" alt="Mazda RX7" loading="lazy" />
-        <h3>Mazda RX7</h3>
-        <p>$45,000</p>
-        <ul class="car-specs">
-            <li><strong>Year:</strong> 2024</li>
-            <li><strong>Fuel:</strong> Gasoline</li>
-            <li><strong>Mileage:</strong> 12,000 km</li>
-            <li><strong>Transmission:</strong> Automatic</li>
-          </ul>
-        <a href="#" class="btn">View Details</a>
-      </div>
-
-      <div class="car-card">
-        <img src="images/car8.jpg" alt="Range Rover" loading="lazy" />
-        <h3>Range Rover</h3>
-        <p>$38,500</p>
-        <ul class="car-specs">
-            <li><strong>Year:</strong> 2024</li>
-            <li><strong>Fuel:</strong> Gasoline</li>
-            <li><strong>Mileage:</strong> 12,000 km</li>
-            <li><strong>Transmission:</strong> Automatic</li>
-          </ul>
-        <a href="#" class="btn">View Details</a>
-      </div>
-
-      <div class="car-card">
-        <img src="images/car9.jpg" alt="Dodge Challenger" loading="lazy" />
-        <h3>Dodge Challenger</h3>
-        <p>$60,000</p>
-        <ul class="car-specs">
-            <li><strong>Year:</strong> 2024</li>
-            <li><strong>Fuel:</strong> Gasoline</li>
-            <li><strong>Mileage:</strong> 12,000 km</li>
-            <li><strong>Transmission:</strong> Automatic</li>
-          </ul>
-        <a href="#" class="btn">View Details</a>
-      </div>
-      <!-- Add more cars as needed -->
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Barrett's AutoHub. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js">
-  </script>
+    </footer>
+    <script src="js/script.js">
+    </script>
+  </div>
 </body>
 </html>
