@@ -6,13 +6,7 @@
   <title>Inventory | Barrett's AutoHub</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<div id="loader-wrapper">
-  <div class="spinner"></div>
-</div> 
 <body>
-  <div id="loader-wrapper">
-    <div class="spinner"></div>
-  </div>  
   <div class="page-wrapper">
     <header>
       <div class="logo">🚗 Barrett's AutoHub</div>
@@ -29,6 +23,7 @@
     <section class="inventory-section">
       <h1 class="inventory-heading">Available Cars</h1>
       <div class="inventory-filters">
+          <input type="text" id="searchInput" placeholder="Search by model..." />
           <input type="number" id="minPrice" placeholder="Min Price" />
           <input type="number" id="maxPrice" placeholder="Max Price" />
           <button id="filterBtn" class="btn">Filter</button>
@@ -180,14 +175,7 @@
         <p>&copy; 2025 Barrett's AutoHub. All rights reserved.</p>
       </div>
     </footer>
-    <script>
-       window.addEventListener("load", function () {
-    const loader = document.getElementById("loader-wrapper");
-    loader.style.opacity = "0";
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 500);
-  });
+    <script src="js/script.js">
     </script>
   </div>
 </body>
