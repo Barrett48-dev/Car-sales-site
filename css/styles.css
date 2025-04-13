@@ -200,6 +200,44 @@ nav a:hover {
   padding-left: 1.2rem;
 }
 
+/*================
+highlights section
+==================*/
+.highlights {
+  background-color: #111; /* Matches the site's dark tone */
+  color: #f0f0f0;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.highlights h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.highlights ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.highlights li {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkmark {
+  color: #00cc66;
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+
 /* =======================
    INVENTORY STYLES
 ======================= */
